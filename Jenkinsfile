@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    DOCKER_REGISTRY = 'grey1842' // change this if your Docker Hub username is different
+    DOCKER_REGISTRY = 'shivamsankrit' // change this if your Docker Hub username is different
     IMAGE_NAME = 'my-nodejs-app'
   }
 
@@ -10,7 +10,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url: 'https://github.com/shivamsankrit/jenkins-test.git', branch: 'main'
+        git url: 'https://github.com/Shivamsankrit/multi-container-node.git', branch: 'main'
       }
     }
 
